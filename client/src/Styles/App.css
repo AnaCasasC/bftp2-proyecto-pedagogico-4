@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+
+html { height: 100%; overflow:auto; }
+body { height: 100%; }
+
+*, ul, figure, h1, h2, p{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #EBE7E0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    max-width: 1220px;
+    margin: auto;
+    width: 100%;
+}
+
+main{flex: 1;}
+
+.align-right{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+input, select, .input, textarea{
+    border: none;
+    border-radius:8px;
+    background-color: #dfdad5;
+    padding: 0.5rem 1rem ;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+input, select, .input{
+    height: 2.4rem;
+    display: flex;
+    align-items: center;
+}
+
+select{
+    padding-right: 4.5rem;
+    --height: 2.4rem;
+    height: var(--height);
+    /** for the dropdown indicator */
+    appearance: none;
+    transition: background .3s ease-out;
+    background-image:
+            url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e") ,
+            linear-gradient(90deg, rgba(255,255,255,0.9), rgba(255,255,255,0.9));
+    background-repeat:
+            no-repeat,
+            no-repeat;
+    background-position:
+            right 1rem center,
+            right;
+    background-size:
+            1rem,
+            3rem;
+}
+
+option{
+    padding: 2rem;
+}
+
+:focus-visible {
+    outline: 1px solid #969590;
+}
+
+.card-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2.5%;
+    row-gap: 2.5rem;
+    padding: 2.5rem 1rem;
+}
+
+.btn{
+    height: 2.4rem;
+    border-radius: 8px;
+    border: none;
+    padding: 0.5rem 3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.btn:hover{cursor: pointer;
+}
+
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow:0 0 0 0.2rem rgba(86, 86, 86, 0.01);
+}
+
+.btn-primary{
+    background-color: #4C8055;
+    color: #ffffff;
+    transition: background-color .3s ease-out;
+}
+
+.btn-primary:hover{
+    background-color: #2f5933;
+    color: #ffffff;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle
+{
+    color: #fff;
+    background-color: #2f5933;
+    border-color: inherit;
+    box-shadow: 0 0 0 0.25rem rgba(86, 86, 86, 0.1)!important;
+}
+.btn-filters:not(:disabled):not(.disabled).active, .btn-filters:not(:disabled):not(.disabled):active, .show>.btn-filters.dropdown-toggle
+{
+    background-color: #ffffff;
+    border-color: inherit;
+    box-shadow: 0 0 0 0.2rem rgba(86, 86, 86, 0.05)!important;
+}
+
+.btn-icon{
+    background: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 400;
+    height: 6rem;
+    padding: 10px;
+    width: 6rem;
+    border-radius: 50%;
+    transition: color .3s ease-out;
+}
+
+.btn-icon:hover{
+    color: rgba(255, 255, 255, 1);
+}
+
+.far{
+    font-size: 1.8rem;
+}
+
+.hover-layer{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.fixed-position{
+    position: fixed;
+}
+
+.gray{
+    color: #00000080;
+}
+
+.h2 {
+    text-transform: uppercase;
+    color: #939393;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+}

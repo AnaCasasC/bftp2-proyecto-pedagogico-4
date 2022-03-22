@@ -1,0 +1,51 @@
+.search-bar{
+    width: 28rem;
+    align-content: center;
+    margin-left: auto;
+}
+
+.search-bar .form {
+    position: relative;
+    margin-top: 0;
+    padding: 0;
+    height: auto;
+    overflow-y: inherit;
+    display: flex;
+    flex-grow: 1;
+}
+
+
+.search-bar .form .fa-search {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    color: #9ca3af;
+}
+
+.search-bar .form span {
+    position: absolute;
+    right: 15px;
+    top: 7px;
+    padding: 2px;
+    border-left: 1px solid #d1d5db
+}
+
+.left-pan {
+    padding-left: 7px
+}
+
+.left-pan i {
+    padding-left: 10px;
+}
+
+.search-bar .form-input {
+    height: 2.4rem;
+    text-indent: 33px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+.search-bar .form-input:focus {
+    box-shadow: none;
+    border: none
+}

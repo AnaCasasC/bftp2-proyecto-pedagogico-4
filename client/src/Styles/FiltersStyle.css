@@ -1,0 +1,41 @@
+.filters-list{
+    display: flex;
+    justify-content: center;
+    padding-top: 1.2rem;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
+.btn-filters{
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    --height: 2.4rem;
+    padding-right: 2.8rem;
+    padding-left: 2rem;
+    height: var(--height);
+    /** for the dropdown indicator */
+    appearance: none;
+    transition: background-color .3s ease-out;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    border-radius: calc(var(--height) * 0.5);
+    background-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.btn-filters:hover{
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.filter{
+    height: 1.8rem;
+    font-size: 0.8rem;
+    padding-right: 1.8rem;
+    text-transform: inherit;
+    font-weight: inherit;
+    margin: 0 0.1rem;
+    background-image: none;
+}

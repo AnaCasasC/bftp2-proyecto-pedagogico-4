@@ -1,0 +1,2 @@
+rootProject.name = 'econotravel-app'
+include ':client', ':server'

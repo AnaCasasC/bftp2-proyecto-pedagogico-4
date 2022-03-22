@@ -1,0 +1,14 @@
+plugins {
+    id 'base'
+    id "com.github.node-gradle.node" version "3.2.1"
+}
+
+task npmBuild(type: NpmTask) {
+    args = ['run', 'build']
+}
+
+task dev(type: NpmTask){
+    args= ['start']
+}
+
+assemble.dependsOn(npmBuild)

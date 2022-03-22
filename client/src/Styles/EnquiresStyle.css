@@ -1,0 +1,66 @@
+
+.gmap_canvas{
+    border: 8px solid #ffffff;
+    border-radius: 8px;
+    height: 380px;
+    position: relative;
+    background-image: url("../Assets/econotravel-photo-default.jpg");
+    transform: rotate(-2deg);
+}
+
+.gmap_canvas iframe{
+    height: 100%;
+    position: absolute;
+    width: 100.07%;
+    object-fit: cover;
+
+}
+
+.enquire .row{
+    padding: 2%;
+}
+
+.enquire ul.row{
+    padding: 0;
+}
+
+.enquire i{
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.enquire ul{
+    list-style-type:none;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.enquire .form-aside{
+    gap: 27px;
+}
+
+.enquire .btn-icon {
+    color: rgba(96, 96, 96, 0.8);
+    font-size: 0.9rem;
+    height: inherit;
+    padding: 0;
+    width: inherit;
+    border-radius:0;
+    text-decoration: none;
+}
+
+.enquire .btn-icon:hover{
+    color: rgb(56, 56, 56);
+}
+
+.enquire li.col-4{
+    padding: 2px;
+}
+
+.enquire fieldset{
+    margin-bottom: 20px;
+ }
+
+.enquire form{
+    margin-top: 0;
+}
