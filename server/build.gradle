@@ -23,6 +23,10 @@ dependencies {
     runtimeOnly project(':client')
 }
 
+jar {
+    enabled = false
+}
+
 tasks.named('test') {
     useJUnitPlatform()
 }
