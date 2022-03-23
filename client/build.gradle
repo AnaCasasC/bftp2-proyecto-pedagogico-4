@@ -4,6 +4,7 @@ plugins {
 }
 
 task npmBuild(type: NpmTask) {
+    dependsOn(npmInstall)
     args = ['run', 'build']
 }
 
@@ -12,3 +13,4 @@ task dev(type: NpmTask){
 }
 
 assemble.dependsOn(npmBuild)
+
