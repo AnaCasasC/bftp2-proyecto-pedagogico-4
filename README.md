@@ -6,4 +6,4 @@ Este proyecto sirve como punto de partida para el proyecto Econotravel. Estad at
 
 Para lanzar el servidor, utiliza el comando `bootRun` de gradle.
 
-`./gradlew bootRun`
+`./gradlew bootRun`. 
