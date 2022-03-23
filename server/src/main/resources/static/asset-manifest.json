@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.b37be9d1.css",
-    "main.js": "/static/js/main.f86269d4.js",
+    "main.js": "/static/js/main.721eb5cb.js",
     "static/media/fundadora.jpg": "/static/media/fundadora.41561f57b505e0c9d387.jpg",
     "static/media/hero-photo.jpg": "/static/media/hero-photo.1e41ac8b94620a9d6310.jpg",
     "static/media/econotravel-photo-default.jpg": "/static/media/econotravel-photo-default.aed05f5f554d6c9b8bf5.jpg",
     "static/media/econotravel-logo.png": "/static/media/econotravel-logo.2ba08748a470b5ad0876.png",
     "index.html": "/index.html",
     "main.b37be9d1.css.map": "/static/css/main.b37be9d1.css.map",
-    "main.f86269d4.js.map": "/static/js/main.f86269d4.js.map"
+    "main.721eb5cb.js.map": "/static/js/main.721eb5cb.js.map"
   },
   "entrypoints": [
     "static/css/main.b37be9d1.css",
-    "static/js/main.f86269d4.js"
+    "static/js/main.721eb5cb.js"
   ]
 }
