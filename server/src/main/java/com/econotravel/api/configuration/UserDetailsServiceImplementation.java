@@ -1,7 +1,7 @@
 package com.econotravel.api.configuration;
 
-import net.jsrois.bookshelf.models.User;
-import net.jsrois.bookshelf.repositories.UserRepository;
+import com.econotravel.api.models.User;
+import com.econotravel.api.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

@@ -2,7 +2,7 @@ package com.econotravel.api.configuration;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import net.jsrois.bookshelf.models.User;
+import com.econotravel.api.models.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

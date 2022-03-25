@@ -24,6 +24,14 @@ dependencies {
 
     testImplementation 'org.hamcrest:hamcrest:2.2'
     runtimeOnly project(':client')
+
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    testImplementation('junit:junit:4.13')
+    implementation 'io.jsonwebtoken:jjwt:0.6.0'
+    implementation group: 'javax.validation', name: 'validation-api', version: '2.0.1.Final'
+
+
 }
 
 jar {

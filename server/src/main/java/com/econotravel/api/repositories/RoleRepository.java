@@ -1,6 +1,6 @@
 package com.econotravel.api.repositories;
 
-import net.jsrois.bookshelf.models.Role;
+import com.econotravel.api.models.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

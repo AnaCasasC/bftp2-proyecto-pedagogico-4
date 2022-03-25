@@ -1,11 +1,11 @@
 package com.econotravel.api.controllers;
 
-import net.jsrois.bookshelf.configuration.JwtUtils;
-import net.jsrois.bookshelf.configuration.UserDetailsImplementation;
-import net.jsrois.bookshelf.models.Role;
-import net.jsrois.bookshelf.models.User;
-import net.jsrois.bookshelf.repositories.RoleRepository;
-import net.jsrois.bookshelf.repositories.UserRepository;
+import com.econotravel.api.configuration.JwtUtils;
+import com.econotravel.api.configuration.UserDetailsImplementation;
+import com.econotravel.api.models.Role;
+import com.econotravel.api.models.User;
+import com.econotravel.api.repositories.RoleRepository;
+import com.econotravel.api.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -102,21 +102,21 @@ public class AuthenticationController {
         } else {
             strRoles.forEach(role -> {
                 switch (role) {
-                    case "admin" -> {
+                    case "admin":
                         Role adminRole = roleRepository.findByName(Role.RoleName.ROLE_ADMIN)
                                 .orElseThrow(() -> new RuntimeException("Error: Role is not found."));
                         roles.add(adminRole);
-                    }
-                    case "mod" -> {
+                        break;
+                    case "mod":
                         Role modRole = roleRepository.findByName(Role.RoleName.ROLE_MODERATOR)
                                 .orElseThrow(() -> new RuntimeException("Error: Role is not found."));
                         roles.add(modRole);
-                    }
-                    default -> {
+                        break;
+                    default:
                         Role userRole = roleRepository.findByName(Role.RoleName.ROLE_USER)
                                 .orElseThrow(() -> new RuntimeException("Error: Role is not found."));
                         roles.add(userRole);
-                    }
+                        break;
                 }
             });
         }

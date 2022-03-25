@@ -1,8 +1,7 @@
 package com.econotravel.api.repositories;
 
-import net.jsrois.bookshelf.models.Role;
+import com.econotravel.api.models.Role;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
